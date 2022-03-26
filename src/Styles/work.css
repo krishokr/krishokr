@@ -21,7 +21,17 @@
 .project:hover {
     background: #A8C686;
     background: #E4572E;
-    /* background: #4DFFF3; */
-    /* opacity: 0.5; */
     cursor: pointer;
+}
+
+@media (max-width: 700px) {
+    .project-container {
+        grid-template-columns: 6fr 6fr;
+    }
+}
+
+@media (max-width: 500px) {
+    .project-container {
+        grid-template-columns: 12fr;
+    }
 }

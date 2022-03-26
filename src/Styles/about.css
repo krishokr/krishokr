@@ -1,9 +1,15 @@
 .about-section {
     display: flex;
     justify-content: center;
-    padding: 3% 0;
 }
 
 .about-content {
     width: 80%;
+}
+
+.about-content h3 {
+    text-align: center;
+    padding-bottom: 5%;
+    font-size: 4vh;
+    font-weight: 300;
 }
