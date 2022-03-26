@@ -1,0 +1,27 @@
+.work-container {
+    display: flex;
+    justify-content: center;
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr;
+    width: 80%;
+}
+
+.project {
+    align-items: center;
+    border-radius: 3px;
+    margin: 8% 10%;
+    height: 30vh;
+    background-color: #fff;
+    transition: 0.8s;
+}
+
+.project:hover {
+    background: #A8C686;
+    background: #E4572E;
+    /* background: #4DFFF3; */
+    /* opacity: 0.5; */
+    cursor: pointer;
+}

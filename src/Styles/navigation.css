@@ -1,0 +1,47 @@
+.navbar-container {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  background: #000;
+  position: fixed;
+}
+
+.navbar{
+  width: 80%;
+  padding: 0 5%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-item {
+  display: flex;
+  color: #fff;
+  transition: 1s;
+  padding: 0 2%;
+  letter-spacing: 1px;
+}
+
+.nav-item:hover {
+  cursor: pointer;
+  color: #fff;
+  opacity: 0.5;
+}
+
+.logo {
+  font-family: adorn-roman, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #fff;
+  padding: 0 2%;
+}
+
+
+
+
+
+
+   
+
+  
+ 
+  

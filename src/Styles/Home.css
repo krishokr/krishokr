@@ -1,0 +1,89 @@
+.home-container {
+    height: 100vh;
+    display: flex;
+}
+
+.home-text-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+}
+
+.hidden-details {
+    position: absolute;
+    top: 65%;
+    width: 45vw;
+}
+
+.home-text-container h1{
+    font-weight: 300;
+    font-size: 7vh;
+}
+
+.home-text-container h3 {
+    font-weight: 200;
+    font-size: 3.5vh;
+}
+
+.home-img-container {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-img-container .profile-img {
+    height: 70%;
+    border-radius: 50px;
+}
+
+
+
+
+
+@media(max-width: 750px) {
+    .home-container {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 25%;
+        height: 135vh;
+    }
+
+    .home-text-container {
+        display: flex;
+        width: 100%;
+    }
+
+    .visible-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .visible-content h1 {
+        margin-bottom: 2%;
+        font-size: 5vh;
+        text-align: center;
+    }
+
+    .visible-content h3 {
+        margin: 2% 0;
+        width: 70%;
+        text-align: center;
+    }
+
+    .hidden-details {
+        display: flex;
+        position: inherit;
+        align-self: center;
+        width: 80%;
+        text-align: center;
+    }
+
+    .home-img-container .profile-img {
+        height: 65vh;
+        padding-bottom: 5%;
+    }
+}

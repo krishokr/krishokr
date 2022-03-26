@@ -1,7 +1,14 @@
-import logo from './logo.svg';
-import './Styles/style.css';
 import Navigation from './Navigation';
 import Home from './Home';
+import FillerOne from './FillerOne';
+import Experience from './Experience';
+import Skills from './Skills';
+import Contact from './Contact';
+import About from './About';
+import Work from './Work';
+import FillerTwo from './FillerTwo';
+
+import './Styles/app.css';
 
 function App() {
   return (
@@ -10,6 +17,14 @@ function App() {
         <Navigation />
       </header>
       <Home />
+      <About />
+      <FillerTwo />
+      {/* <FillerOne /> */}
+      {/* <Skills /> */}
+      <Work />
+      <Experience />
+      <Contact />
+
     </div>
   );
 }

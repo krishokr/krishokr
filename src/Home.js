@@ -1,127 +1,41 @@
-import React from 'react'
+import { transition } from 'd3';
+import React, {useState} from 'react';
+import './Styles/Home.css';
+
+
 
 export default function Home() {
+	const [detailsVisible, setdetailsVisible] = useState(false);
+	
+	function handleHover() {
+		setdetailsVisible(true);
+	}
+
+	function handleLeave() {
+		setdetailsVisible(false);
+	}
+
+	const hiddenDetailsStyle = {
+		display: detailsVisible ? 'flex' : 'none',
+		transition: '0.5s'
+	}
+
+
   return (
-    <section id="home-section" class="hero">
-		<div className="home-slider owl-carousel">
-			<div className="slider-item">
-				<div <section id="home-section" class="hero">
-		<div <section id="home-section" class="hero">
-		<div class="home-slider owl-carousel">
-			<div class="slider-item">
-				<div class="overlay"></div>
-				<div class="container-fluid px-md-0">
-					<div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-						<div class="one-third order-md-last img" style="background-image:url(images/bg_1.jpg);">
-							<div class="overlay"></div>
-							<div class="overlay-1"></div>
-						</div>
-						<div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-							<div class="text">
-								<span class="subheading">Hello! This is Clyde</span>
-								<h1 class="mb-4 mt-3">Creative <span>UI/UX</span> Designer &amp; Developer</h1>
-								<p><a href="#" class="btn btn-primary">Hire me</a> <a href="#" class="btn btn-primary btn-outline-primary">Download CV</a></p>
-							</div>
-						</div>
-					</div>
-				</div>
+		<section className='home-container'>
+			<div className='home-img-container'>
+				<img className='profile-img' alt="Kris" src={require('./img/profile.jpeg')}/>
 			</div>
-
-			<div class="slider-item">
-				<div class="overlay"></div>
-				<div class="container-fluid px-md-0">
-					<div class="row d-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-						<div class="one-third order-md-last img" style="background-image:url(images/bg_2.jpg);">
-							<div class="overlay"></div>
-							<div class="overlay-1"></div>
-						</div>
-						<div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-							<div class="text">
-								<span class="subheading">We Design &amp; Build Brands</span>
-								<h1 class="mb-4 mt-3">Hi, I am <span>Clyde</span> This is my favorite work.</h1>
-								<p><a href="#" class="btn btn-primary">Hire me</a> <a href="#" class="btn btn-primary btn-outline-primary">Download CV</a></p>
-							</div>
-						</div>
-					</div>
+			<div className='home-text-container'>
+				<div className='visible-content'>
+					<h1 className='home-title'>Adventurous ideas?</h1>
+					<h3>I'm Kris, web developer and recent UC Davis graduate.</h3>
+					<p onMouseOver={() => handleHover()} onMouseLeave={() => handleLeave()} style={{cursor: 'pointer'}}>more</p>
 				</div>
+				<p className='hidden-details' style={hiddenDetailsStyle}>As a Philosophy major, I bring to development an analytical eye for detail and organization. I not only want to understand how code works and why, but also how to make it simpler and cleaner so it's easier for fellow developers to write quality features.</p>
 			</div>
-		</div>
-	</section>="home-slider owl-carousel">
-			<div class="slider-item">
-				<div class="overlay"></div>
-				<div class="container-fluid px-md-0">
-					<div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-						<div class="one-third order-md-last img" style="background-image:url(images/bg_1.jpg);">
-							<div class="overlay"></div>
-							<div class="overlay-1"></div>
-						</div>
-						<div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-							<div class="text">
-								<span class="subheading">Hello! This is Clyde</span>
-								<h1 class="mb-4 mt-3">Creative <span>UI/UX</span> Designer &amp; Developer</h1>
-								<p><a href="#" class="btn btn-primary">Hire me</a> <a href="#" class="btn btn-primary btn-outline-primary">Download CV</a></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="slider-item">
-				<div class="overlay"></div>
-				<div class="container-fluid px-md-0">
-					<div class="row d-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-						<div class="one-third order-md-last img" style="background-image:url(images/bg_2.jpg);">
-							<div class="overlay"></div>
-							<div class="overlay-1"></div>
-						</div>
-						<div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-							<div class="text">
-								<span class="subheading">We Design &amp; Build Brands</span>
-								<h1 class="mb-4 mt-3">Hi, I am <span>Clyde</span> This is my favorite work.</h1>
-								<p><a href="#" class="btn btn-primary">Hire me</a> <a href="#" class="btn btn-primary btn-outline-primary">Download CV</a></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>="overlay"></div>
-				<div class="container-fluid px-md-0">
-					<div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-						<div class="one-third order-md-last img" style="background-image:url(images/bg_1.jpg);">
-							<div class="overlay"></div>
-							<div class="overlay-1"></div>
-						</div>
-						<div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-							<div class="text">
-								<span class="subheading">I'm Kris, a web developer.</span>
-								<h1 class="mb-4 mt-3">Creative <span>UI/UX</span> Designer &amp; Developer</h1>
-								<p><a href="#" class="btn btn-primary">Hire me</a> <a href="#" class="btn btn-primary btn-outline-primary">Download CV</a></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div className="slider-item">
-				<div class="overlay"></div>
-				<div class="container-fluid px-md-0">
-					<div class="row d-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-						<div class="one-third order-md-last img" style="background-image:url(images/bg_2.jpg);">
-							<div class="overlay"></div>
-							<div class="overlay-1"></div>
-						</div>
-						<div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-							<div class="text">
-								<span class="subheading">We Design &amp; Build Brands</span>
-								<h1 class="mb-4 mt-3">Hi, I am <span>Clyde</span> This is my favorite work.</h1>
-								<p><a href="#" class="btn btn-primary">Hire me</a> <a href="#" class="btn btn-primary btn-outline-primary">Download CV</a></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+			
+		</section>
+    
   )
 }
