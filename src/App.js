@@ -20,11 +20,8 @@ function App() {
       <Home />
       <About />
       <FillerTwo />
-      {/* <FillerOne /> */}
-      {/* <Skills /> */}
       <Work />
       <FillerOne />
-      {/* <Experience /> */}
       <ContactForm />
 
     </div>

@@ -43,53 +43,53 @@ export default function FillerOne() {
       </div>
 
       
-      <div className='box-container'>
+      <div className='box-container hide-mobile'>
         <div className='diagonal-box-right-one'></div>
       </div>
       
-      <div className='box-container'>
+      <div className='box-container hide-mobile'>
         <div className='diagonal-box-left-one'></div>
       </div>
       
-      <div className='box-container'>
+      <div className='box-container hide-mobile'>
         <div className='diagonal-box-right-one'></div>
       </div>
 
-      <div className='box-container'>
-        <div className='diagonal-box-left-one'></div>
-      </div>
-
-      
-      <div className='box-container'>
-        <div className='diagonal-box-right-one'></div>
-      </div>
-      
-      <div className='box-container'>
-        <div className='diagonal-box-left-one'></div>
-      </div>
-      
-      <div className='box-container'>
-        <div className='diagonal-box-right-one'></div>
-      </div>
-
-      <div className='box-container'>
+      <div className='box-container hide-mobile'>
         <div className='diagonal-box-left-one'></div>
       </div>
 
       
-      <div className='box-container'>
+      <div className='box-container hide-mobile'>
         <div className='diagonal-box-right-one'></div>
       </div>
       
-      <div className='box-container'>
+      <div className='box-container hide-mobile'>
         <div className='diagonal-box-left-one'></div>
       </div>
       
-      <div className='box-container'>
+      <div className='box-container hide-mobile'>
         <div className='diagonal-box-right-one'></div>
       </div>
 
-      <div className='box-container'>
+      <div className='box-container hide-mobile'>
+        <div className='diagonal-box-left-one'></div>
+      </div>
+
+      
+      <div className='box-container hide-mobile'>
+        <div className='diagonal-box-right-one'></div>
+      </div>
+      
+      <div className='box-container hide-mobile'>
+        <div className='diagonal-box-left-one'></div>
+      </div>
+      
+      <div className='box-container hide-mobile'>
+        <div className='diagonal-box-right-one'></div>
+      </div>
+
+      <div className='box-container hide-mobile'>
         <div className='diagonal-box-left-one'></div>
       </div>
       
