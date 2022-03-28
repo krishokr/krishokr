@@ -23,6 +23,7 @@ function App() {
       {/* <FillerOne /> */}
       {/* <Skills /> */}
       <Work />
+      <FillerOne />
       {/* <Experience /> */}
       <ContactForm />
 

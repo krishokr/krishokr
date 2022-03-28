@@ -1,0 +1,126 @@
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    color: #000;
+}
+
+.form-title h1 {
+    font-size: 5vw;
+    font-weight: 200;
+}
+
+.form-title h3 {
+    font-weight: 300;
+}
+
+.container-one, .container-two {
+    display: flex;
+}
+
+.form {
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #000;
+    background-color: #fff;
+    padding-bottom: 5%;
+}
+
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+    padding: 3% 0;
+}
+
+#name, #phone {
+    margin-right: 10%;
+}
+
+.submit-button {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
+    width: 20%;
+    background-color: #fff;
+    border: 0;
+    border-radius: 1px;
+    border: 1px solid #E4572E;
+    color: #E4572E;
+    transition: 0.5s;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3vh;
+}
+
+label {
+    padding-bottom: 2%;
+}
+
+.submit-button:hover{
+    background-color: #E4572E;
+    color: #fff;
+    cursor: pointer;
+}
+
+.form-item input {
+    border: 0;
+    border-radius: 0;
+    font-size: 3.5vh;
+    line-height: 2em;
+    font-family: 'Times New Roman', Times, serif;
+    border: solid 1px #000;
+}
+
+
+textarea {
+    height: 20vh;
+    border: solid 1px #000;
+}
+
+@media (max-width: 800px) {
+    .container-one, .container-two {
+        flex-direction: column;
+    }
+
+    #phone, #name, #company {
+        width: 100%;
+    }
+    #email {
+        width: 100%;
+    }
+
+    textarea {
+        width: 100%;
+    }
+}
+
+@media(max-width: 600px) { 
+
+    .form-title h1 {
+        font-size: 7vh;
+    }
+
+    .form-title-subtext {
+        font-size: 90%;
+    }
+
+    #phone, #name, #company {
+        width: 100%
+    }
+    #email {
+        width: 100%;
+    }
+
+    .textarea-container{
+        width: 100%;
+    }
+
+    .submit-button {
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 5%;
+    }
+}

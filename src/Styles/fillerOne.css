@@ -1,8 +1,9 @@
-.about-container {
+.filler-one-container {
     height: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #fff;
 }
 
 .box-container {
@@ -10,16 +11,16 @@
     height: 50px;
 }
 
-.diagonal-box-left {
+.diagonal-box-left-one {
     transform: rotate(-45deg);
-    background-color: #fff;
+    background-color: #000;
     width: 2px;
     height: 50px;
 }
 
-.diagonal-box-right{
+.diagonal-box-right-one {
     transform: rotate(45deg);
-    background-color: #fff;
+    background-color: #000;
     width: 1px;
     height: 50px;
 }
