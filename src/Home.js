@@ -17,12 +17,13 @@ export default function Home() {
 
 	const hiddenDetailsStyle = {
 		display: detailsVisible ? 'flex' : 'none',
-		transition: '0.5s'
+		transition: '0.25s',
+		transitionDelay: '1s'
 	}
 
 
   return (
-		<section className='home-container'>
+		<section id='home' className='home-container'>
 			<div className='home-img-container'>
 				<img className='profile-img' alt="Kris" src={require('./img/profile.jpeg')}/>
 			</div>

@@ -3,10 +3,11 @@ import Home from './Home';
 import FillerOne from './FillerOne';
 import Experience from './Experience';
 import Skills from './Skills';
-import Contact from './Contact';
+import ContactForm from './ContactForm';
 import About from './About';
 import Work from './Work';
 import FillerTwo from './FillerTwo';
+
 
 import './Styles/app.css';
 
@@ -22,8 +23,8 @@ function App() {
       {/* <FillerOne /> */}
       {/* <Skills /> */}
       <Work />
-      <Experience />
-      <Contact />
+      {/* <Experience /> */}
+      <ContactForm />
 
     </div>
   );

@@ -19,6 +19,7 @@
   transition: 1s;
   padding: 0 2%;
   letter-spacing: 1px;
+  text-decoration: none;
 }
 
 .nav-item:hover {
