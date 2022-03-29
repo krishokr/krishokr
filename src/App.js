@@ -18,10 +18,11 @@ function App() {
         <Navigation />
       </header>
       <Home />
-      <About />
       <FillerTwo />
+      <About />
       <Work />
-      <FillerOne />
+      {/* <FillerOne /> */}
+      <Experience />
       <ContactForm />
 
     </div>

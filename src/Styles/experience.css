@@ -1,0 +1,73 @@
+#experience {
+    margin: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.experience-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.achievement-container, .education-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.achievement-container h1, .education-container h1 {
+    font-weight: 100;
+    letter-spacing: 1px;
+    margin-bottom: 3%;
+}
+
+.title {
+   width: 15%;
+}
+
+.title-underline {
+    border: 0.5px solid #fff;
+    width: 50%;
+}
+
+.row-box {
+    display: flex;
+}
+
+.exp {   
+    padding: 3% 5% 5% 0;
+}
+
+
+
+
+
+.uni-title{
+    margin-top: 5%;
+    margin-bottom: 0;
+    font-weight: 400;
+}
+
+.row-box h2 {
+    font-weight: 200;
+    margin-top: 0;
+}
+
+.line-div {
+    width: 50%;
+    border: 0.5px solid #fff;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 10%;
+    margin-left: 5%;
+}
+
+@media(max-width: 700px) {
+    .row-box {
+        flex-direction: column;
+    }
+
+    .row-box .line-div {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

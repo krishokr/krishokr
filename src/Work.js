@@ -42,6 +42,11 @@ export default function Work() {
 
   return (
     <div id='work' className='work-container'>
+      <div className='title-container'>
+        <div className='border-one'></div>
+          <h1>Recent Work</h1>
+        <div className='border-two'></div>
+      </div>
         <div className='project-container'>
             {/* <a href='https://manettishremproject.krishokr.repl.co/'>
               <div onMouseOver={() => handleHoverOne()} onMouseLeave={() => handleMouseLeaveOne()}className='project project-one'>
