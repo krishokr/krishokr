@@ -13,8 +13,9 @@
 }
 
 .about-content h3 {
+    color: #E4572E;
     text-align: center;
     padding-bottom: 5%;
-    font-size: 4vh;
+    font-size: 3.8vh;
     font-weight: 300;
 }
