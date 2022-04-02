@@ -37,6 +37,29 @@
   padding: 0 2%;
 }
 
+.mobile {
+  display: none;
+  margin-right: 8%;
+  flex-direction: column;
+}
+
+.mobile-nav {
+  flex-direction: column;
+}
+
+@media(max-width: 768px) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 10%;
+  }
+}
+
+
 
 
 
