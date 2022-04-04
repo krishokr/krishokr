@@ -10,6 +10,7 @@ import FillerTwo from './FillerTwo';
 
 
 import './Styles/app.css';
+import Footer from './Footer';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
       {/* <FillerOne /> */}
       <Experience />
       <ContactForm />
+      <Footer />
 
     </div>
   );

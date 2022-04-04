@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import './Styles/navigation.css';
 import { BrowserRouter } from 'react-router-dom';
 import { HashLink as Link } from 'react-router-hash-link';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function Navigation() {
   const [showMenu, setshowMenu] = useState(false);
@@ -23,7 +24,15 @@ export default function Navigation() {
           <Link to='#contact' className='nav-item' smooth>Contact</Link>
         </nav>
         <nav className='mobile'>
-          <button onClick={() => toggleMenu()}>{showMenu ? 'X' : 'show Menu'}</button>
+          <div className='fontawesome-container'>
+            <div className='hamburger-container' onClick={() => toggleMenu()} style={{display: showMenu ? 'none' : 'flex'}}>
+              <FontAwesomeIcon icon="fa-solid fa-bars" />
+            </div>
+            <div className='x-container' onClick={() => toggleMenu()} style={{display: showMenu ? 'flex' : 'none'}}>
+              <FontAwesomeIcon icon="fa-solid fa-xmark" />
+            </div>
+          </div>
+          
           <div className='mobile-nav' style={{display: showMenu ? 'flex' : 'none'}}>
             <Link to='#home' className='nav-item' smooth>Home</Link>
             <Link to='#about' className='nav-item' smooth>About</Link>

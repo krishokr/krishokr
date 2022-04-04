@@ -3,43 +3,6 @@ import './Styles/work.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function Work() {
-  const [oneIsHovered, setoneIsHovered] = useState(false);
-  const [twoIsHovered, settwoIsHovered] = useState(false);
-  const [threeIsHovered, setthreeIsHovered] = useState(false);
-  const [fourIsHovered, setfourIsHovered] = useState(false);
-  const [fiveIsHovered, setfiveIsHovered] = useState(false);
-
-  function handleHoverOne() {
-    return oneIsHovered ? setoneIsHovered(false) : setoneIsHovered(true);
-  }
-
-  function handleMouseLeaveOne() {
-    return oneIsHovered ? setoneIsHovered(true) : setoneIsHovered(false);
-  }
-
-  function handleHoverTwo() {
-    return twoIsHovered ? settwoIsHovered(false) : settwoIsHovered(true);
-  }
-
-  function handleMouseLeaveTwo() {
-    return oneIsHovered ? settwoIsHovered(false) : settwoIsHovered(true);
-  }
-
-  function handleHoverThree() {
-    return threeIsHovered ? setthreeIsHovered(false) : setthreeIsHovered(true);
-  }
-
-  function handleMouseLeaveThree() {
-    return threeIsHovered ? setthreeIsHovered(false) : setthreeIsHovered(true);
-  }
-
-  function handleHoverFour() {
-    return fourIsHovered ? setfourIsHovered(false) : setfourIsHovered(true);
-  }
-
-  function handleMouseLeaveFour() {
-    return fourIsHovered ? setfourIsHovered(false) : setfourIsHovered(true);
-  }
 
   return (
     <div id='work' className='work-container'>

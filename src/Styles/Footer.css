@@ -1,0 +1,28 @@
+.footer-container {
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-icons a {
+    padding: 25%;
+}
+
+.fa-github, .fa-envelope, .fa-linkedin {
+    color: #fff;
+    cursor: pointer;
+    font-size: 5vh;
+    transition: transform 0.5s;
+}
+
+.fa-github:hover, .fa-envelope:hover, .fa-linkedin:hover {
+    opacity: 0.5;
+    transform: translateY(-5px);
+} 

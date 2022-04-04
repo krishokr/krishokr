@@ -1,31 +1,13 @@
 import React, {useState} from 'react';
 import './Styles/contactForm.css';
+import { useForm, ValidationError } from '@formspree/react';
 
 export default function ContactForm() {
-    const [status, setStatus] = useState("Submit");
-    
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        setStatus("Sending...");
-        const { name, company, phone, email, message } = e.target.elements;
-        let details = {
-        name: name.value,
-        company: company.value,
-        phone: phone.value,
-        email: email.value,
-        message: message.value,
-        };
-        let response = await fetch("http://localhost:3000/contact", {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json;charset=utf-8",
-        },
-        body: JSON.stringify(details),
-        });
-        setStatus("Submit");
-        let result = await response.json();
-        alert(result.status);
-    };
+    const [state, handleSubmit] = useForm("mnqwbrzk");
+
+    if (state.succeeded) {
+        return <p>Thanks for contacting me!</p>;
+    }
 
   return (
     <div className='form-container' id='contact'>
@@ -38,28 +20,30 @@ export default function ContactForm() {
         <div className='container-one'>
           <div className='form-item'>
             <label htmlFor="name">Name</label>
-            <input type="text" id="name" required />
+            <input name='name' type="text" id="name" required />
           </div>
           <div className='form-item'>
             <label htmlFor="company">Company</label>
-            <input type="text" id="company" />
+            <input name='company' type="text" id="company" />
           </div>
         </div>
         <div className='container-two'>
           <div className='form-item'>
             <label htmlFor="phone">Phone</label>
-            <input type="text" id="phone" />
+            <input name='phone' type="text" id="phone" />
           </div>
           <div className='form-item'>
             <label htmlFor="email">Email</label>
-            <input type="email" id="email" required />
+            <input name='email' type="email" id="email" required />
+            <ValidationError prefix="Email" field="email" errors={state.errors}/>
           </div>
         </div>
         <div className='form-item textarea-container'>
           <label htmlFor="message">Message</label>
-          <textarea id="message" required />
+          <textarea name='message' id="message" required />
+          <ValidationError prefix="Message" field="message" errors={state.errors}/>
         </div>
-        <button className='submit-button' type="submit">{status}</button>
+        <button className='submit-button' type="submit" disabled={state.submitting}>Submit</button>
       </form>
     </div>
   )

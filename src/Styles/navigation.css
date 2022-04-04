@@ -40,12 +40,46 @@
 
 .mobile {
   display: none;
-  margin-right: 8%;
   flex-direction: column;
+  width: 40%;
+  top: 0;
 }
 
 .mobile-nav {
+  background-color: #E4572E;
+  height: 100vh;
+  width: 100%;
   flex-direction: column;
+  position: relative;
+  padding-top: 20px;
+}
+
+.mobile-nav .nav-item {
+  text-align: center;
+  padding: 10% 12%;
+  color: #000;
+  font-weight: 400;
+}
+
+.fontawesome-container {
+  position: absolute;
+  top: 20px;
+  right: 15%;
+  z-index: 2;
+}
+
+.fa-bars, .fa-xmark {
+  cursor: pointer;
+  font-size: 5vh;
+  transition: 1s;
+}
+
+.fa-xmark {
+  color: #000;
+}
+
+fa-bars:hover {
+  color: #E4572E;
 }
 
 @media(max-width: 768px) {
@@ -53,10 +87,11 @@
     display: none;
   }
   .mobile {
+    transition: 1s;
     display: flex;
     position: absolute;
     right: 0;
-    top: 10%;
+    top: 0;
   }
 }
 
