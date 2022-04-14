@@ -13,13 +13,14 @@ export default function Work() {
       </div>
         <div className='project-container'>
 
-            <a href='https://manettishremproject.krishokr.repl.co/'>
+            <a href='https://krishokr.github.io/slice-the-pie/'>
               <div className='project project-one'>
                 <h3 >Slice the Pie</h3>
                 <h5 >You're running a university. How much would you allocate to different sectors? Learn about your funding sources with a guessing game by inputting percentages of each section of a pie chart. </h5>
                 <div className='icons'>
                   <FontAwesomeIcon icon="fa-brands fa-react" />
                   <FontAwesomeIcon icon="fa-brands fa-css3-alt" />
+                  <FontAwesomeIcon icon="fa-solid fa-chart-pie" />
                 </div>
               </div>
               
@@ -59,6 +60,19 @@ export default function Work() {
                   <FontAwesomeIcon icon="fa-brands fa-bootstrap" />
                 </div>
               </div>
+            </a>
+
+            <a href='https://krishokr.github.io/meet/'>
+              <div className='project project-one'>
+                <h3 >Hang</h3>
+                <h5 >A meetup application using Google Calendar API with data from Career Foundry that allows users to find events in their city. Two charts make it easier for users to understand what kind of events they can expect to find. Uses Recharts.</h5>
+                <div className='icons'>
+                  <FontAwesomeIcon icon="fa-brands fa-react" />
+                  <FontAwesomeIcon icon="fa-brands fa-css3-alt" />
+                  <FontAwesomeIcon icon="fa-solid fa-chart-pie" />
+                </div>
+              </div>
+              
             </a>
             
         </div>
