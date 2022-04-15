@@ -42,8 +42,8 @@ export default function ContactForm() {
           <label htmlFor="message">Message</label>
           <textarea name='message' id="message" required />
           <ValidationError prefix="Message" field="message" errors={state.errors}/>
+          <button className='submit-button' type="submit" disabled={state.submitting}>Submit</button>
         </div>
-        <button className='submit-button' type="submit" disabled={state.submitting}>Submit</button>
       </form>
     </div>
   )

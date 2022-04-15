@@ -94,3 +94,9 @@
         padding-bottom: 5%;
     }
 }
+
+@media(max-width: 440px) {
+    .home-container {
+        height: 100vh;
+    }
+}

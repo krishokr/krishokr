@@ -2,7 +2,7 @@
 import { library } from '@fortawesome/fontawesome-svg-core';
 
 // import your icons
-import { faReact, faHtml5, faJs, faBootstrap, faCss3Alt, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faReact, faHtml5, faJs, faBootstrap, faCss3Alt, faGithub, faLinkedin, faNodeJs } from '@fortawesome/free-brands-svg-icons';
 import {faBars, faXmark, faEnvelope, faChartPie} from '@fortawesome/free-solid-svg-icons';
 
 library.add(
@@ -16,5 +16,6 @@ library.add(
     faGithub,
     faLinkedin,
     faEnvelope,
-    faChartPie
+    faChartPie,
+    faNodeJs
 );

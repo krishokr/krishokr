@@ -77,11 +77,21 @@
     width: 100%;
 }
 
-.fa-react, .fa-js, .fa-css3-alt, .fa-html5, .fa-bootstrap, .fa-chart-pie {
+.fa-react, .fa-js, .fa-css3-alt, .fa-html5, .fa-bootstrap, .fa-chart-pie, .fa-node-js {
     padding: 3%;
     font-size: 5vh;
 }
 
+.highlights-container {
+    padding: 3%;
+}
+.highlights-container:hover {
+    display: none;
+}
+.highlights-container p{
+    font-size: 2vh;
+    font-weight: 200;
+}
 
 
 @media (max-width: 800px) {
@@ -93,5 +103,11 @@
 @media (max-width: 500px) {
     .project-container {
         grid-template-columns: 12fr;
+    }
+}
+
+@media (min-width: 1440px) {
+    .project h5 {
+        line-height: 40px;
     }
 }

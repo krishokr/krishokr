@@ -19,3 +19,16 @@
     font-size: 3.8vh;
     font-weight: 300;
 }
+
+@media(max-width: 440px) {
+    .about-content h1 {
+        line-height: 10px;
+    }
+}
+
+@media(min-width: 1440px) {
+    
+    .about-content h3 {
+        line-height: 20px;
+    }
+}

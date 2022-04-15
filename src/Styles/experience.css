@@ -17,7 +17,8 @@
 .achievement-container h1, .education-container h1 {
     font-weight: 100;
     letter-spacing: 1px;
-    margin-bottom: 3%;
+    margin-bottom: 0;
+    color: #E4572E;
 }
 
 .title {
@@ -93,5 +94,11 @@
     .row-box .line-div {
         margin-left: auto;
         margin-right: auto;
+    }
+}
+
+@media(min-width: 1440px) {
+    .exp h2, .exp h3, .exp h5, .exp p{
+        font-size: 150%;
     }
 }
