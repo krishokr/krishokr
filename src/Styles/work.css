@@ -98,6 +98,11 @@
     font-weight: 200;
 }
 
+@media (max-width: 375px) {
+    .project {
+        height: 85vh;
+    }
+}
 
 @media (max-width: 800px) {
     .project-container {

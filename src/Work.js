@@ -22,7 +22,7 @@ export default function Work() {
         {/* <a href='#'> */}
               <div className='project project-one'>
 
-                <WorkDetails Name= 'Hang' Description='Ever wonder what kinds of happenings are in your city but not sure where to look? Introducing Hang, a mellow meetup application that allows users to find events in their own city.' ImagePath={HangImage} Github='https://github.com/krishokr/meet' Link='https://krishokr.github.io/meet/'/>
+                <WorkDetails Name= 'Hang' Description='Ever wonder what kinds of happenings are in your city but not sure where to look? Introducing Hang, a mellow meetup application that allows users to find events in their own city.' ImagePath={HangImage} Github='https://github.com/krishokr/meet' Link='https://krishokr.github.io/meet/' Icons={['fa-brands fa-react', "fa-brands fa-css3-alt", "fa-solid fa-chart-pie"]}/>
 
 
                 {/* <h3 >Hang</h3> */}
