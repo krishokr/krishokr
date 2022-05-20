@@ -26,7 +26,6 @@ function App() {
       <Experience />
       <ContactForm />
       <Footer />
-
     </div>
   );
 }

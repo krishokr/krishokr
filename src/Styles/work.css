@@ -6,6 +6,7 @@
     padding: 5% 0;
 }
 
+
 .title-container {
     margin-bottom: 2%;
 }
@@ -32,6 +33,10 @@
     width: 80%;
 }
 
+.project:hover {
+    background-color: #E4572E;
+}
+
 .project-container a {
     text-decoration: none;
     color: #fff;
@@ -49,26 +54,26 @@
     justify-content: center;
 }
 
-.project:hover {
+/* .project:hover {
     background: #E4572E;
     cursor: pointer;
     color: #000;
-}
+} */
 
-.project h3 {
+/* .project h3 {
     margin: 8% 0;
     font-size: 3.5vh;
     font-weight: 250;
     width: 70%;
-}
+} */
 
-.project h5 {
+/* .project h5 {
     margin: 0;
     font-size: 2.5vh;
     width: 70%;
     font-weight: 300;
     line-height: 25px;
-}
+} */
 
 .icons {
     text-align: center;

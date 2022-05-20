@@ -3,9 +3,11 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 
 // import your icons
 import { faReact, faHtml5, faJs, faBootstrap, faCss3Alt, faGithub, faLinkedin, faNodeJs } from '@fortawesome/free-brands-svg-icons';
-import {faBars, faXmark, faEnvelope, faChartPie} from '@fortawesome/free-solid-svg-icons';
+import {faBars, faXmark, faEnvelope, faChartPie, faArrowRight,  faArrowLeft} from '@fortawesome/free-solid-svg-icons';
 
 library.add(
+    faArrowLeft,
+    faArrowRight,
     faReact,
     faHtml5,
     faJs,

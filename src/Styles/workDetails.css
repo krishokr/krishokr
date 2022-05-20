@@ -1,0 +1,48 @@
+.work-details {
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    margin: 8% 10%;
+    height: 70vh;
+    background-color: #000;
+    transition: 0.8s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.work-details p {
+    margin: 0;
+    font-size: 2.5vh;
+    width: 70%;
+    font-weight: 300;
+    line-height: 25px;
+}
+
+.work-details:hover {
+    background: #E4572E;
+    cursor: pointer;
+    color: #000;
+}
+
+.work-details h1 {
+    margin: 8% 0;
+    font-size: 3.5vh;
+    font-weight: 250;
+    width: 70%;
+}
+
+.fa-arrow-right, .fa-arrow-left{
+    font-size: 1em;
+    transition: 0.7s;
+}
+
+.fa-arrow-right:hover, .fa-arrow-left:hover {
+    font-size: 1.5em;
+    color: #fff;
+}   
+
+img {
+    width: 80%;
+}
