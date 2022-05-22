@@ -43,8 +43,12 @@
     color: #fff;
 }   
 
-img {
-    width: 80%;
+.icons {
+    transform: translateY(-10vh);
+}
+
+.work-details img {
+    height: 20vh;
 }
 
 .button-icon-container {
